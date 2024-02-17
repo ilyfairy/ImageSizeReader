@@ -1,14 +1,7 @@
-﻿namespace ImageSizeReader.Model
-{
-	public class Size
-	{
-		public Size(int width, int height)
-		{
-			Width = width;
-			Height = height;
-		}
+﻿namespace ImageSizeReader.Model;
 
-		public int Width { get; }
-		public int Height { get; }
-	}
+public readonly struct Size(int width, int height)
+    {
+	public readonly int Width { get; } = width;
+	public readonly int Height { get; } = height;
 }
